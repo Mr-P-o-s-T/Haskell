@@ -1,0 +1,15 @@
+*.hi
+*.o
+*.swp
+*.tag
+*~
+*_flymake.hs
+.hsenv
+.stack-work/
+.vagrant/
+*.imports
+**/.idea/
+**/*.iml
+**/out/
+**/.git/
+stack*.yaml.lock
