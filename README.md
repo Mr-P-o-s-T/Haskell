@@ -1,5 +1,6 @@
-# Haskell
-Popovych Oleksandr
+
+ # Haskell_Example Project
+This project aims to provide a template that you can use solving your tasks
 
 ### Prerequesties
 *  Download and install [Haskell](https://docs.haskellstack.org/en/stable/install_and_upgrade/#windows) for your platform 
@@ -16,8 +17,30 @@ Popovych Oleksandr
 # Lab2
 
 
-# Tasks
+# Task1
+1.  Launch IntelliJ IDEA Community Edition
+2.  *   Inside IntelliJ use `File > New > Project from Existing Sources...` from the IntelliJ menu
+    *   In the `Welcome to IntelliJ IDEA` dialog use `Import Project`
+3.  In the `New Project wizard` select `Import project from external model` and check `Haskell Stack`
+4.  In next page of wizard configure Project SDK by configuring Haskell Tool Stack with selecting path to stack binary
+5.  Finish wizard and project will be opened
 
+### Run tests
+Create New Configuration for Tests:
+
+1.  Press Configuration menu and pick `Edit configurations...`
+2.  Pick `Add new configuration > Haskell Stack > Haskell Stack Tester`
+3.  Set configuration name
+4.  Launch tests with `Start` button
+
+### Run program
+1.  Press Configuration menu and pick `Edit configurations...`
+2.  Pick `Add new configuration > Haskell Stack > Haskell Stack Runner`
+3.  Set configuration name
+4.  Launch program with `Start` button
+
+### Input
+Program awaits 2 numbers separated with space: x y. 1 <= x, y <= 8
 
 # Additional information
 
