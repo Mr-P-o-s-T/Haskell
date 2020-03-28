@@ -1,5 +1,5 @@
 
- # Haskell_Example Project
+# Haskell Projects
 This project aims to provide a template that you can use solving your tasks
 
 ### Prerequesties
@@ -47,6 +47,40 @@ Create New Configuration for Lab1:
 5.  Follow console instructions
 
 # Lab2
+1.  Launch IntelliJ IDEA Community Edition
+2.  *   Inside IntelliJ use `File > New > Project from Existing Sources...` from the IntelliJ menu
+    *   In the `Welcome to IntelliJ IDEA` dialog use `Import Project`
+3.  In the `New Project wizard` select `Import project from external model` and check `Haskell Stack`
+4.  In next page of wizard configure Project SDK by configuring Haskell Tool Stack with selecting path to stack binary
+5.  Finish wizard and project will be opened
+
+### Run tests
+Create two New Configurations for Tests:
+
+1.  Press Configuration menu and pick `Edit configurations...`
+2.  Pick `Add new configuration > Haskell Stack > Haskell Stack Tester`
+3.  Choose testsuite (`Lab2:test:Lab2-test` or `Lab2:test:Lab2-threaded-test`)
+4.  Set configuration name
+5.  Launch tests with `Start` button
+
+### Run program
+Create two New Configurations for Lab2:
+
+1.  Press Configuration menu and pick `Edit configurations...`
+2.  Pick `Add new configuration > Haskell Stack > Haskell Stack Runner`
+3.  Choose executable (`Lab2-exe` or `Lab2-threaded-exe`)
+4.  Set up program arguments: `h n +RTS -s -Nx` where
+    *  h - number of vertexes in graph
+	*  n - number of edges in graph, less than h^2
+	*  +RTS -s - show statistics of memory usage and time execution
+	*  x - number of threads (-Nx for `Lab2-threaded-exe` only)
+5.  Set configuration name
+6.  Launch program with `Start` button
+7.  Follow console instructions
+
+### Productivity measuring
+For productivity measuring set up same h and n for `Lab2-exe` and `Lab2-threaded-exe` (for example h = 500, and n = 1000), and set up x for `Lab2-threaded-exe` (for example x = 4). 
+Then after measuring of execution time of `Lab2-exe` and `Lab2-threaded-exe` compare each value.
 
 # Tasks
 
